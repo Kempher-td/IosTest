@@ -7,25 +7,19 @@
 
 import Foundation
 class  NetworkLayer{
-    static let basicURL: String = "https://newsapi.org/v2/everything?q="
-    static let apipara: String = "&apiKey=963888c6c3de46a78fde1540963bf6dd"
-    let test = URL(string: "https://newsapi.org/v2/top-headlines?country=us&sortBy=publishedAt&apiKey=963888c6c3de46a78fde1540963bf6dd")!
+    let response = URL(string: "https://newsapi.org/v2/top-headlines?country=ru&sortBy=publishedAt&apiKey=963888c6c3de46a78fde1540963bf6dd")!
 
     
     func TakeNews(completion: @escaping (Result<[Articles?],Error >) -> ()) {
      
         
-        let request = URLRequest(url: test)
+        let request = URLRequest(url: response)
         URLSession(configuration: .default).dataTask(with: request) { data, response, error in
            if let  error = error {
                 completion(.failure(error))
                 return
             }
-            if let data = data,
-            let urlResponse = response as? HTTPURLResponse,
-               urlResponse.statusCode == 200 {
-//                let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
-//                print(json)
+            if let data = data  {
                 do{
                     let Newsresponse = try JSONDecoder().decode(parseres.self, from: data)
                 
@@ -41,8 +35,6 @@ class  NetworkLayer{
       
     }
 }
-
-
 enum NetworkError: Error {
     case invalidData
 }
