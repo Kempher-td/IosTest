@@ -16,6 +16,11 @@
 		8C38229E27AD859500B1FA0F /* MyNewsTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C38229D27AD859500B1FA0F /* MyNewsTestTests.swift */; };
 		8C3822A827AD859600B1FA0F /* MyNewsTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3822A727AD859600B1FA0F /* MyNewsTestUITests.swift */; };
 		8C3822AA27AD859600B1FA0F /* MyNewsTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3822A927AD859600B1FA0F /* MyNewsTestUITestsLaunchTests.swift */; };
+		8C3822B727AD867100B1FA0F /* secondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3822B627AD867100B1FA0F /* secondController.swift */; };
+		8C3822BB27AD86BC00B1FA0F /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3822BA27AD86BC00B1FA0F /* NetworkLayer.swift */; };
+		8C3822BD27AD86F300B1FA0F /* ModelForPars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3822BC27AD86F300B1FA0F /* ModelForPars.swift */; };
+		8C3822BF27AD876000B1FA0F /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3822BE27AD876000B1FA0F /* Article.swift */; };
+		8C3822C127AD87E000B1FA0F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3822C027AD87E000B1FA0F /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		8C3822A327AD859600B1FA0F /* MyNewsTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyNewsTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C3822A727AD859600B1FA0F /* MyNewsTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNewsTestUITests.swift; sourceTree = "<group>"; };
 		8C3822A927AD859600B1FA0F /* MyNewsTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNewsTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8C3822B627AD867100B1FA0F /* secondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondController.swift; sourceTree = "<group>"; };
+		8C3822BA27AD86BC00B1FA0F /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		8C3822BC27AD86F300B1FA0F /* ModelForPars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelForPars.swift; sourceTree = "<group>"; };
+		8C3822BE27AD876000B1FA0F /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		8C3822C027AD87E000B1FA0F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +112,11 @@
 				8C38228627AD859300B1FA0F /* AppDelegate.swift */,
 				8C38228827AD859300B1FA0F /* SceneDelegate.swift */,
 				8C38228A27AD859300B1FA0F /* ViewController.swift */,
+				8C3822C027AD87E000B1FA0F /* TableViewCell.swift */,
+				8C3822BA27AD86BC00B1FA0F /* NetworkLayer.swift */,
+				8C3822BC27AD86F300B1FA0F /* ModelForPars.swift */,
+				8C3822BE27AD876000B1FA0F /* Article.swift */,
+				8C3822B627AD867100B1FA0F /* secondController.swift */,
 				8C38228C27AD859300B1FA0F /* Main.storyboard */,
 				8C38228F27AD859500B1FA0F /* Assets.xcassets */,
 				8C38229127AD859500B1FA0F /* LaunchScreen.storyboard */,
@@ -258,8 +273,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C3822BB27AD86BC00B1FA0F /* NetworkLayer.swift in Sources */,
 				8C38228B27AD859300B1FA0F /* ViewController.swift in Sources */,
+				8C3822C127AD87E000B1FA0F /* TableViewCell.swift in Sources */,
+				8C3822B727AD867100B1FA0F /* secondController.swift in Sources */,
+				8C3822BF27AD876000B1FA0F /* Article.swift in Sources */,
 				8C38228727AD859300B1FA0F /* AppDelegate.swift in Sources */,
+				8C3822BD27AD86F300B1FA0F /* ModelForPars.swift in Sources */,
 				8C38228927AD859300B1FA0F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
